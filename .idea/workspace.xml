@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="blog:war" />
+      <artifact name="blog:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c90f2455-5b3a-4c10-9cdf-8967c8c86e24" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="PARALLEL_COMPILATION" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\java\m2\repository" />
+        <option name="mavenHome" value="E:/java/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="E:\java\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ucTMsDoKrtVRYpTtl9hIct8WDl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\templates\error" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\static\error\error" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\static\error\404\js" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\static" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\static\error\404" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\njfu\blog\admin\src\main\resources" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\static\error\404" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\i18n" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\templates\admin" />
+      <recent name="D:\project\njfu\blog\admin\src\main\resources\templates\error" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.yf.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yf.util.MD5Utils" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yf.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarkdownUtils" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yf.util.MarkdownUtils" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yf.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="blogs-input.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/blog/templates/admin/blogs-input.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yf.BlogApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MarkdownUtils" />
+      <item itemvalue="Application.MD5Utils" />
+      <item itemvalue="JavaScript Debug.blogs-input.html" />
+      <item itemvalue="Spring Boot.BlogApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.blogs-input.html" />
+        <item itemvalue="Application.MD5Utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c90f2455-5b3a-4c10-9cdf-8967c8c86e24" name="Default Changelist" comment="" />
+      <created>1624963834545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624963834545</updated>
+      <workItem from="1624963836015" duration="2975000" />
+      <workItem from="1625044100847" duration="2658000" />
+      <workItem from="1625114666261" duration="2570000" />
+      <workItem from="1625117269413" duration="28000" />
+      <workItem from="1625117309283" duration="6230000" />
+      <workItem from="1625203543514" duration="6052000" />
+      <workItem from="1625274612708" duration="1631000" />
+      <workItem from="1625276268194" duration="5825000" />
+      <workItem from="1625397396336" duration="1830000" />
+      <workItem from="1625405256389" duration="2660000" />
+      <workItem from="1625462578070" duration="6503000" />
+      <workItem from="1625624381332" duration="5386000" />
+      <workItem from="1625649833042" duration="22000" />
+      <workItem from="1625652780346" duration="81000" />
+      <workItem from="1625709141940" duration="5652000" />
+      <workItem from="1625715851904" duration="7237000" />
+      <workItem from="1625746708400" duration="77000" />
+      <workItem from="1625920257546" duration="48000" />
+      <workItem from="1626226489086" duration="8708000" />
+      <workItem from="1626241742608" duration="2611000" />
+      <workItem from="1626248210527" duration="7963000" />
+      <workItem from="1626744559542" duration="10872000" />
+      <workItem from="1626782035111" duration="2325000" />
+      <workItem from="1626795890599" duration="602000" />
+      <workItem from="1626826427295" duration="4123000" />
+      <workItem from="1626831204076" duration="3552000" />
+      <workItem from="1626915517298" duration="3662000" />
+      <workItem from="1626948566951" duration="4523000" />
+      <workItem from="1626999714806" duration="9963000" />
+      <workItem from="1627086759050" duration="11696000" />
+      <workItem from="1627202674658" duration="15489000" />
+      <workItem from="1627221876388" duration="392000" />
+      <workItem from="1627257868366" duration="13369000" />
+      <workItem from="1627273283043" duration="2064000" />
+      <workItem from="1627277927180" duration="285000" />
+      <workItem from="1627285672400" duration="1831000" />
+      <workItem from="1627313982220" duration="1369000" />
+      <workItem from="1627344352456" duration="7527000" />
+      <workItem from="1627431181984" duration="12667000" />
+      <workItem from="1627464924816" duration="1384000" />
+      <workItem from="1627466334772" duration="3371000" />
+      <workItem from="1627474324567" duration="1152000" />
+      <workItem from="1627485135923" duration="3600000" />
+      <workItem from="1627517280952" duration="3807000" />
+      <workItem from="1627523263254" duration="2950000" />
+      <workItem from="1627527950890" duration="2442000" />
+      <workItem from="1627603038368" duration="803000" />
+      <workItem from="1627611615685" duration="3402000" />
+      <workItem from="1627615099903" duration="1758000" />
+      <workItem from="1627617273284" duration="2087000" />
+      <workItem from="1627623687701" duration="1148000" />
+      <workItem from="1627624877058" duration="1135000" />
+      <workItem from="1627694580722" duration="658000" />
+      <workItem from="1627695264001" duration="33000" />
+      <workItem from="1627695335992" duration="160000" />
+      <workItem from="1627695512275" duration="21000" />
+      <workItem from="1627695543310" duration="320000" />
+      <workItem from="1627695946856" duration="790000" />
+      <workItem from="1627699028967" duration="128000" />
+      <workItem from="1627699169264" duration="69000" />
+      <workItem from="1627699302677" duration="171000" />
+      <workItem from="1627719070856" duration="431000" />
+      <workItem from="1627719515593" duration="72000" />
+      <workItem from="1627719600598" duration="791000" />
+      <workItem from="1627736788250" duration="1447000" />
+      <workItem from="1627781796661" duration="1218000" />
+      <workItem from="1627874484364" duration="1043000" />
+      <workItem from="1628047265719" duration="10730000" />
+      <workItem from="1628130207252" duration="680000" />
+      <workItem from="1628131694917" duration="2107000" />
+      <workItem from="1628163344301" duration="10000" />
+      <workItem from="1628170564439" duration="2811000" />
+      <workItem from="1628471773118" duration="488000" />
+      <workItem from="1628749568230" duration="917000" />
+      <workItem from="1628822066499" duration="84000" />
+      <workItem from="1628836319705" duration="13000" />
+      <workItem from="1629181588767" duration="2297000" />
+      <workItem from="1629445230637" duration="1340000" />
+      <workItem from="1629885938224" duration="123000" />
+      <workItem from="1629947932523" duration="234000" />
+      <workItem from="1630234100862" duration="149000" />
+      <workItem from="1630285561791" duration="5783000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.yf.po.Type" memberName="blogs" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((org.springframework.validation.support.BindingAwareModelMap)model).entrySet().toArray()[0]" custom="org.springframework.validation.support.BindingAwareModelMap" />
+        <watch expression="((org.springframework.validation.support.BindingAwareModelMap)model).entrySet().toArray()[0]" language="JAVA" custom="org.springframework.validation.support.BindingAwareModelMap" />
+        <watch expression="((org.springframework.validation.support.BindingAwareModelMap)model).entrySet().toArray()[0]" language="JAVA" custom="org.springframework.validation.support.BindingAwareModelMap" />
+        <watch expression="((java.util.ArrayList)((LinkedHashMap.Entry)((org.springframework.validation.support.BindingAwareModelMap)model).entrySet().toArray()[0]).getValue()).get(1)" custom="org.springframework.validation.support.BindingAwareModelMap,java.util.LinkedHashMap.Entry,java.util.ArrayList" />
+        <watch expression="comment.replyComments" />
+        <watch expression="comment" />
+        <watch expression="comment.replyComments" />
+        <watch expression="comment" />
+        <watch expression="comments.get(0)" />
+        <watch expression="comments.get(0)" language="JAVA" />
+        <watch expression="comments.get(2)" />
+        <watch expression="((java.util.ArrayList)((CommentServiceImpl)this).tempReplies).get(0)" custom="com.yf.service.CommentServiceImpl,java.util.ArrayList" />
+        <watch expression="this" />
+        <watch expression="comments.get(2)" />
+        <watch expression="listTag.get(0).blogs" />
+        <watch expression="this" language="JAVA" />
+        <watch expression="types.get(0).blogs.get(0)" />
+        <watch expression="types" />
+        <watch expression="model" />
+        <watch expression="types.get(0).name" />
+        <watch expression="types.get(0).name" language="JAVA" />
+        <watch expression="BlogList.get(2)" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

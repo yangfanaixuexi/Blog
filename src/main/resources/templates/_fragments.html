@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device_width, initial-scale=1.0">
+  <title th:replace="${title}"></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" href="../static/css/mycss.css" th:href="@{/css/mycss.css}">
+  <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+  <link rel="stylesheet" href="../static/css/animate.min.css" th:href="@{/css/animate.min.css}">
+  <link rel="stylesheet" href="../static/Lib/prism/css/prism.css" th:href="@{/Lib/prism/css/prism.css}">
+  <link rel="stylesheet" href="../static/Lib/tocbot/css/tocbot.css" th:href="@{/Lib/tocbot/css/tocbot.css}">
+</head>
+<body>
+  <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini">
+    <!-- 引入样式 ui inverted:黑色 attached 消除圆角 segment 表示为一个片段 -->
+    <div class="ui container" style="width: 90% !important;">
+      <div class="ui inverted secondary stackable menu">      <!-- stackable在移动端进行堆叠,一般与grid配合 -->
+        <h2 class="ui teal header item">YF's Blog</h2>
+        <a href="#" th:href="@{/}" class="m-item m-mobile-hide item" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>[[#{nav.index}]]</a>
+        <a href="#" th:href="@{/types/-1}" class="m-item m-mobile-hide item" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>[[#{nav.classify}]]</a>
+        <a href="#" th:href="@{/tags/-1}" class="m-item m-mobile-hide item" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>[[#{nav.tag}]]</a>
+        <a href="#" th:href="@{/archives}" class="m-item m-mobile-hide item" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>[[#{nav.file}]]</a>
+        <a href="#" th:href="@{/about}" class="m-item m-mobile-hide item" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>[[#{nav.about}]]</a>
+        <div class="right m-item m-mobile-hide item">
+          <form name="search" method="post" action="#" th:action="@{/search}" target="_blank">
+            <div class="ui icon input m-margin-tb-tiny">
+              <input type="text" name="query" placeholder="Search..." th:value="${query}">
+              <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 移动端显示的菜单栏,在PC端隐藏 -->
+    <a href="#" id="m-button" class="ui black icon button m-top-right m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+
+  </nav>
+
+  <footer th:fragment="footer" class="ui inverted vertical segment " style="padding-top: 5em !important;">
+    <div class="ui  center aligned container">
+      <!-- 进行一列一列的布局 分成16份 -->
+      <div class="ui inverted divided stackable grid">
+        <div class="three wide column">
+          <div class="ui inverted link list">
+            <div class="item">
+              <img src="../static/image/二维码.png" th:src="@{/image/二维码.png}" class="ui rounded image" alt="" style="width: 120px">
+            </div>
+          </div>
+        </div>
+
+        <div class="three wide column">
+            <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+            <div id="newblog-container">
+              <div class="ui inverted link list" th:fragment="newblogList">
+                <a href="#" class="item" target="_blank" th:style="${iterStat.count} == 1 ? 'padding:0 0 .4em 0 ;' : 'padding: .4em 0'" th:href="@{/blog/{id}(id=${blog.id})}" th:each="blog, iterStat: ${newblogs}" th:text="${#strings.abbreviate(blog.title,15)}">用户故事(User Story)</a>
+                <!--/*-->
+                <a href="#" class="item" style="padding: .4em 0">关于刻意训练的清单</a>
+                <a href="#" class="item" style="padding: .4em 0">失败要趁早</a>
+                <!--*/-->
+              </div>
+            </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced" >请联系我</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item" style="padding:0 0 .4em 0">QQ : [[#{index.qq}]]</a>
+            <a href="#" class="item" style="padding: .4em 0">Email : [[#{index.email}]]</a>
+            <a href="#" class="item" style="padding: .4em 0">phone : [[#{index.phone}]]</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced" >声明</h4>
+          <p class="m-text-thin m-text-padded-bottom m-text-spaced m-opacity-mini">
+            杨帆的个人博客，希望大家可以在这里多多交流以及分享自己的编程经验！！
+          </p>
+        </div>
+      </div>
+
+      <div class="ui inverted section divider" style="margin-bottom: 1rem; !important;"></div>     <!-- 分割线 -->
+      <p class="m-text-thin  m-text-spaced m-opacity-tiny">Copyright@2021-2031 YangFan</p>
+
+        <span>
+          <a target="_blank" rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010202011150"
+             style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+            <img src="http://www.hflmwl.com/images/batb.png" style="float:left;">
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">苏公网安备32010202011150&ensp;&ensp;</p>
+          </a>
+
+          <a target="_blank" rel="nofollow" href="http://beian.miit.gov.cn/?token=15815bcb-97ab-4d86-833f-bf8bd4742338"
+             style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">备案号 : 苏ICP备2021009471号-1</p>
+          </a>
+        </span>
+
+
+    </div>
+  </footer>
+
+  <th:block th:fragment="script">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script src="../static/Lib/prism/js/prism.js" th:src="@{/Lib/prism/js/prism.js}"></script>
+    <script src="../static/Lib/tocbot/js/tocbot.min.js" th:src="@{/Lib/tocbot/js/tocbot.min.js}"></script>
+    <script src="../static/Lib/qrcode/qrcode.min.js" th:src="@{/Lib/qrcode/qrcode.min.js}"></script>
+    <script src="../static/Lib/scrollTo/jquery.scrollTo.min.js" th:src="@{/Lib/scrollTo/jquery.scrollTo.min.js}"></script>
+    <script src="../static/Lib/waypoints/lib/jquery.waypoints.min.js" th:src="@{/Lib/waypoints/lib/jquery.waypoints.min.js}"></script>
+    <script>
+      $("#newblog-container").load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
+  </th:block>
+
+</body>
+</html>

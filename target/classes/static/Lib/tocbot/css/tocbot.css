@@ -1,0 +1,71 @@
+.toc {
+    overflow-y: auto
+}
+
+.toc > .toc-list {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative
+}
+
+.toc > .toc-list li {
+    list-style: none
+}
+
+.toc-list {
+    list-style-type: none;      //外部样式去除
+    margin: 0;
+    padding-left: 10px
+}
+
+.toc-list li a
+{
+    display: block;
+    padding: 4px 0;             // 改变内部间隔,上下间隔拉开
+    font-weight: 300;           // 改变字体粗细
+}
+
+.toc-list li a:hover
+{
+    color: #00B5AD;             // 鼠标移动的颜色
+}
+
+a.toc-link {
+    color: currentColor;
+    height: 100%
+}
+
+.is-collapsible {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: all 300ms ease-in-out
+}
+
+.is-collapsed {
+    max-height: 0
+}
+
+.is-position-fixed {
+    position: fixed !important;
+    top: 0
+}
+
+.is-active-link {
+    font-weight: 300;
+    color: #00B5AD; !important;     // 鼠标选中的颜色
+}
+
+.toc-link::before {
+    background-color: #EEE;
+    content: ' ';
+    display: inline-block;
+    height: 20px;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    width: 2px;
+}
+
+.is-active-link::before {
+    background-color: #54BC4B
+}

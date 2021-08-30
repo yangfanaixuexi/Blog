@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(~{::title})">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device_width, initial-scale=1.0">
+  <title>后台登录界面</title>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" href="../../static/css/mycss.css">
+
+</head>
+<body>
+  <div class="m-container-small m-padded-tb-massive" style="max-width: 30em !important;margin-top: 5% !important;">
+    <div class="ui container">
+      <div class="ui middle aligned center aligned grid">
+        <div class="column">
+          <h2 class="ui teal image header">
+            <div class="content">
+              博客管理后台登录
+            </div>
+          </h2>
+          <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
+            <div class="ui segment">
+              <div class="field">
+                <div class="ui left icon input">
+                  <i class="user icon"></i>
+                  <input type="text" name="username" placeholder="用户名">
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui left icon input">
+                  <i class="lock icon"></i>
+                  <input type="password" name="password" placeholder="密码">
+                </div>
+              </div>
+              <button class="ui fluid large teal submit button">登 录</button>
+            </div>
+
+            <div class="ui mini error message"></div>
+            <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 引入JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script>
+    $('#m-button').click(function ()
+    {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+      on:'hover'
+    });
+    $('.ui.form').form({
+      inline:true,
+      fields:
+          {
+              username:{
+                identifier: 'username',
+                rules: [{
+                  type: 'empty',
+                  prompt: '请输入用户名'
+                }]
+              },
+              password:{
+                identifier: 'password',
+                rules: [{
+                  type: 'empty',
+                  prompt: '请输入密码'
+                }]
+              }
+            }
+    })
+  </script>
+</body>
+</html>

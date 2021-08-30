@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device_width, initial-scale=1.0">
+  <title th:replace="${title}"></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" href="../../static/Lib/editormd/css/editormd.css" th:href="@{/Lib/editormd/css/editormd.css}">
+  <link rel="stylesheet" href="../static/css/mycss.css" th:href="@{/css/mycss.css}">
+</head>
+<body>
+  <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <!-- 引入样式 ui inverted:黑色 attached 消除圆角 segment 表示为一个片段 -->
+    <div class="ui container" style="width: 90% !important;">
+      <div class="ui inverted secondary stackable menu">      <!-- stackable在移动端进行堆叠,一般与grid配合 -->
+        <h2 class="ui teal header item">YF's Blog 管理后台</h2>
+        <a href="#" th:href="@{/admin/blogs}" class="m-item m-mobile-hide item" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博客</a>
+        <a href="#" th:href="@{/admin/types}" class="m-item m-mobile-hide item" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+        <a href="#" th:href="@{/admin/tags}" class="m-item m-mobile-hide item" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+        <div class="right m-item m-mobile-hide menu">
+          <div class="ui dropdown item">
+            <div class="text">
+              <img src="https://unsplash.it/100/100?image=1005" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}">
+              <span th:text="${session.user.nickname}">杨帆</span>
+            </div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" id="m-button" class="ui black icon button m-top-right m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+
+  </nav>
+
+  <footer th:fragment="footer" class="ui inverted vertical segment " style="padding-top: 5em !important;">
+    <div class="ui  center aligned container">
+      <!-- 进行一列一列的布局 分成16份 -->
+      <div class="ui inverted divided stackable grid">
+        <div class="three wide column">
+          <div class="ui inverted link list">
+            <div class="item">
+              <img src="../static/image/二维码.png" th:src="@{/image/二维码.png}" class="ui rounded image" alt="" style="width: 120px">
+            </div>
+          </div>
+        </div>
+
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+          <div id="newblog-container">
+            <div class="ui inverted link list" th:fragment="newblogList">
+              <a href="#" class="item" target="_blank" th:style="${iterStat.count} == 1 ? 'padding:0 0 .4em 0 ;' : 'padding: .4em 0'" th:href="@{/blog/{id}(id=${blog.id})}" th:each="blog, iterStat: ${newblogs}" th:text="${blog.title}">用户故事(User Story)</a>
+              <!--/*-->
+              <a href="#" class="item" style="padding: .4em 0">关于刻意训练的清单</a>
+              <a href="#" class="item" style="padding: .4em 0">失败要趁早</a>
+              <!--*/-->
+            </div>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced" >请联系我</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item" style="padding:0 0 .4em 0">QQ : [[#{index.qq}]]</a>
+            <a href="#" class="item" style="padding: .4em 0">Email : [[#{index.email}]]</a>
+            <a href="#" class="item" style="padding: .4em 0">phone : [[#{index.phone}]]</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced" >声明</h4>
+          <p class="m-text-thin m-text-padded-bottom m-text-spaced m-opacity-mini">
+            杨帆的个人博客，希望大家可以在这里多多交流以及分享自己的编程经验！！
+          </p>
+        </div>
+      </div>
+
+      <div class="ui inverted section divider"></div>     <!-- 分割线 -->
+      <p class="m-text-thin m-text-padded-bottom m-text-spaced m-opacity-tiny">Copyright@2021-2030 hdiwadawiodjoi</p>
+    </div>
+  </footer>
+
+  <th:block th:fragment="script">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script src="../../static/Lib/editormd/editormd.min.js" th:src="@{/Lib/editormd/editormd.min.js}"></script>
+    <script>
+      $("#newblog-container").load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
+  </th:block>
+
+</body>
+</html>

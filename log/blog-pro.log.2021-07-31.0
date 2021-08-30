@@ -1,0 +1,9 @@
+2021-07-31 09:55:02.592  INFO 1792 --- [restartedMain] com.yf.BlogApplication                   : Starting BlogApplication using Java 1.8.0_291 on LAPTOP-VTLT1322 with PID 1792 (D:\project\njfu\blog\admin\target\classes started by yangfan in D:\project\njfu\blog\admin)
+2021-07-31 09:55:02.593  INFO 1792 --- [restartedMain] com.yf.BlogApplication                   : The following profiles are active: pro
+2021-07-31 09:55:03.815  INFO 1792 --- [restartedMain] com.yf.BlogApplication                   : Started BlogApplication in 1.245 seconds (JVM running for 373.881)
+2021-07-31 16:12:33.001  INFO 6852 --- [restartedMain] com.yf.BlogApplication                   : Starting BlogApplication using Java 1.8.0_291 on LAPTOP-VTLT1322 with PID 6852 (D:\project\njfu\blog\admin\target\classes started by yangfan in D:\project\njfu\blog\admin)
+2021-07-31 16:12:33.002  INFO 6852 --- [restartedMain] com.yf.BlogApplication                   : The following profiles are active: pro
+2021-07-31 16:12:36.551  INFO 6852 --- [restartedMain] com.yf.BlogApplication                   : Started BlogApplication in 3.887 seconds (JVM running for 4.578)
+2021-07-31 21:30:52.234  INFO 15012 --- [restartedMain] com.yf.BlogApplication                   : Starting BlogApplication using Java 1.8.0_291 on LAPTOP-VTLT1322 with PID 15012 (D:\project\njfu\blog\admin\target\classes started by yangfan in D:\project\njfu\blog\admin)
+2021-07-31 21:30:52.234  INFO 15012 --- [restartedMain] com.yf.BlogApplication                   : The following profiles are active: pro
+2021-07-31 21:30:53.574  INFO 15012 --- [restartedMain] com.yf.BlogApplication                   : Started BlogApplication in 1.37 seconds (JVM running for 79.504)

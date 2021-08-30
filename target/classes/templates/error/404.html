@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>错误页面</title>
+
+    <link rel="stylesheet" href="css/style.css" th:href="@{/error/error/css/style.css}">
+
+</head>
+<body>
+
+<div class="mars"></div>
+<img src="images/404.svg" class="logo-404" th:src="@{/error/error/images/404.svg}">
+<img src="images/meteor.svg" class="meteor" th:src="@{/error/error/images/meteor.svg}">
+<p class="title">Oh no!!</p>
+<p class="subtitle">
+    页面未找到<br>要么请求一个不在这里的页面。
+</p>
+<div align="center">
+    <a class="btn-back" onclick="window.history.go(-1)">返回上一页</a>
+</div>
+
+<img src="images/astronaut.svg" class="astronaut" th:src="@{/error/error/images/astronaut.svg}">
+<img src="images/spaceship.svg" class="spaceship" th:src="@{/error/error/images/spaceship.svg}">
+
+
+</body>
+</html>

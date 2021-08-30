@@ -1,0 +1,305 @@
+
+body
+{
+    background: url("../image/watercolor.png");
+}
+
+.m-padded-mini
+{
+    padding: 0.5em !important;
+}
+
+.m-padded
+{
+    padding: 2em !important;
+}
+.m-padded-tb-mini
+{
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+
+}
+
+.m-padded-tb-tiny
+{
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+
+.m-padded-tb-small
+{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.m-padded-tb
+{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+
+}
+
+.m-padded-tb-large
+{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+
+}
+
+.m-padded-tb-big
+{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+
+}
+
+.m-padded-tb-huge
+{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+
+}
+
+.m-padded-tb-massive
+{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+.m-padded-lr-responsive
+{
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
+.m-padded-lr-tiny
+{
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+
+.m-padded-lr-mini
+{
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+}
+
+.m-padded-lr-so-mini
+{
+    padding-left: .5em !important;
+    padding-right: .5em !important;
+}
+
+.m-mobile-lr-clear
+{
+    padding-left: .5em !important;
+    padding-right: .5em !important;
+}
+/*------- margin -------*/
+.m-margin-tb-tiny
+{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-margin-top-small
+{
+    margin-top: 0.5em !important;
+}
+
+.m-margin-top
+{
+    margin-top: 1em !important;
+}
+
+.m-margin-top-large
+{
+    margin-top: 2em !important;
+}
+
+.m-margin-bottom-mini
+{
+    margin-bottom: .2em !important;
+}
+
+.m-margin-bottom-small
+{
+    margin-bottom: .5em !important;
+}
+
+/*------- text ---------*/
+.m-text
+{
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8 !important;
+}
+
+.m-text-thin
+{
+    font-weight: 300 !important;
+}
+
+/* 字间距 */
+.m-text-spaced
+{
+    letter-spacing: 1px !important;
+}
+
+/* 行间距 */
+.m-text-lined
+{
+    line-height: 1.8 !important;
+}
+
+.m-text-padded-bottom
+{
+    padding-bottom: 1em !important;
+}
+
+/* 透明度 */
+.m-opacity-mini
+{
+    opacity: 0.8 !important;
+}
+
+.m-opacity-tiny
+{
+    opacity: 0.6 !important;
+}
+
+
+/*------------ display -------------*/
+.m-inline-block
+{
+    display: inline-block;
+}
+
+/*------------ container -------------*/
+.m-container
+{
+    max-width: 72em !important;
+    margin: auto;
+}
+
+.m-container-small
+{
+    max-width: 60em !important;
+    margin: auto;
+}
+
+.m-container-middle
+{
+    max-width: 70em !important;
+    margin: auto;
+}
+
+/*------------ color -------------*/
+.m-black
+{
+    color: #333 !important;
+}
+
+.m-teal
+{
+    color: #00B5AD !important;
+}
+
+/*------------ position -------------*/
+.m-top-right
+{
+    position: absolute;
+    top:1.1em;
+    right: 0;
+}
+
+.m-fixed {
+    position: fixed !important;
+    /* 避免元素被semantic ui 覆盖 ——> 当元素不见的时候可以这么设置 */
+    z-index: 10 !important;
+}
+
+.m-right-bottom
+{
+    bottom : 0 !important;
+    right: 0 !important;
+}
+
+/*------- shadow -------*/
+.m-shadow-small
+{
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* 适配其他浏览器效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;         /* 加入小的阴影 */
+}
+
+/*------------ text -------------*/
+.m-text-style{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    left: 20%;
+    margin-left: -150px;
+    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 35px;
+}
+
+
+/*------------ media -------------*/
+.m-mobile-show
+{
+    display: none !important;
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+    .m-mobile-hide
+    {
+        display: none !important;
+    }
+    .m-mobile-show
+    {
+        display: block !important;
+    }
+
+    .m-padded-lr-responsive
+    {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .m-padded-lr-so-mini
+    {
+        padding-left: 0.5em !important;
+        padding-right: 0.5em !important;
+    }
+
+    .m-mobile-wide
+    {
+        width: 100% !important;
+    }
+
+    .m-mobile-lr-clear
+    {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .m-mobile-margin-tb-so-mini
+    {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+    }
+
+    .m-mobile-center
+    {
+        text-align:center;
+    }
+
+
+}

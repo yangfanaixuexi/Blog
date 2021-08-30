@@ -1,0 +1,19 @@
+spring:
+# 配置thymeleaf
+  thymeleaf:
+    mode: HTML
+    check-template: false
+    check-template-location: false
+  # 指定环境配置
+  profiles:
+    active: pro
+  web:
+    resources:
+      add-mappings: true
+  jpa:
+    open-in-view: true
+
+  messages:
+    basename: i18n/messages
+
+

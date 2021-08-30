@@ -1,0 +1,70 @@
+2021-08-09 09:18:42.545  INFO 20092 --- [restartedMain] com.yf.BlogApplication                   : Starting BlogApplication using Java 1.8.0_291 on LAPTOP-VTLT1322 with PID 20092 (D:\project\njfu\blog\admin\target\classes started by yangfan in D:\project\njfu\blog\admin)
+2021-08-09 09:18:42.548 DEBUG 20092 --- [restartedMain] com.yf.BlogApplication                   : Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-08-09 09:18:42.548  INFO 20092 --- [restartedMain] com.yf.BlogApplication                   : The following profiles are active: dev
+2021-08-09 09:18:42.573  INFO 20092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-09 09:18:42.573  INFO 20092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-09 09:18:42.976  INFO 20092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-09 09:18:43.026  INFO 20092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2021-08-09 09:18:43.561  INFO 20092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-09 09:18:43.568  INFO 20092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-09 09:18:43.568  INFO 20092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-08-09 09:18:43.615  INFO 20092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-09 09:18:43.616  INFO 20092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1042 ms
+2021-08-09 09:18:43.719  INFO 20092 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-09 09:18:43.748  INFO 20092 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-09 09:18:43.831  INFO 20092 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-09 09:18:43.894  INFO 20092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-09 09:18:43.994  INFO 20092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-09 09:18:44.005  INFO 20092 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-08-09 09:18:44.483  INFO 20092 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-09 09:18:44.489  INFO 20092 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-09 09:18:45.557  INFO 20092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-09 09:18:45.580  INFO 20092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-09 09:18:45.586  INFO 20092 --- [restartedMain] com.yf.BlogApplication                   : Started BlogApplication in 3.359 seconds (JVM running for 3.961)
+2021-08-09 09:18:49.015  INFO 20092 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-09 09:18:49.015  INFO 20092 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-09 09:18:49.016  INFO 20092 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-09 09:18:49.039  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:18:49.116  WARN 20092 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-09 09:18:49.132  WARN 20092 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-09 09:18:49.141  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:18:49.141  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:18:49.610  INFO 20092 --- [http-nio-8080-exec-3] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:18:49.614  INFO 20092 --- [http-nio-8080-exec-3] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:18:49.614  INFO 20092 --- [http-nio-8080-exec-3] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:19:31.963  INFO 20092 --- [http-nio-8080-exec-1] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:19:31.977  INFO 20092 --- [http-nio-8080-exec-1] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:19:31.977  INFO 20092 --- [http-nio-8080-exec-1] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:19:32.144  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:19:32.147  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:19:32.147  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:19:48.687  INFO 20092 --- [http-nio-8080-exec-5] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:19:48.707  INFO 20092 --- [http-nio-8080-exec-5] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:19:48.707  INFO 20092 --- [http-nio-8080-exec-5] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:19:48.968  INFO 20092 --- [http-nio-8080-exec-4] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:19:48.972  INFO 20092 --- [http-nio-8080-exec-4] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:19:48.972  INFO 20092 --- [http-nio-8080-exec-4] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:20:51.425  INFO 20092 --- [http-nio-8080-exec-10] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:20:51.438  INFO 20092 --- [http-nio-8080-exec-10] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:20:51.438  INFO 20092 --- [http-nio-8080-exec-10] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:20:51.975  INFO 20092 --- [http-nio-8080-exec-9] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:20:51.978  INFO 20092 --- [http-nio-8080-exec-9] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:20:51.978  INFO 20092 --- [http-nio-8080-exec-9] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:21:37.218  INFO 20092 --- [http-nio-8080-exec-7] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:21:37.230  INFO 20092 --- [http-nio-8080-exec-7] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:21:37.230  INFO 20092 --- [http-nio-8080-exec-7] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:21:37.773  INFO 20092 --- [http-nio-8080-exec-3] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:21:37.776  INFO 20092 --- [http-nio-8080-exec-3] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:21:37.776  INFO 20092 --- [http-nio-8080-exec-3] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:22:12.641  INFO 20092 --- [http-nio-8080-exec-6] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:22:12.652  INFO 20092 --- [http-nio-8080-exec-6] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:22:12.652  INFO 20092 --- [http-nio-8080-exec-6] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:22:13.171  INFO 20092 --- [http-nio-8080-exec-5] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:22:13.174  INFO 20092 --- [http-nio-8080-exec-5] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:22:13.174  INFO 20092 --- [http-nio-8080-exec-5] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:23:46.458  INFO 20092 --- [http-nio-8080-exec-4] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-08-09 09:23:46.470  INFO 20092 --- [http-nio-8080-exec-4] com.yf.aspect.LogAspect                  : Result : index
+2021-08-09 09:23:46.470  INFO 20092 --- [http-nio-8080-exec-4] com.yf.aspect.LogAspect                  : -----doAfter------
+2021-08-09 09:23:47.000  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : Request: {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yf.web.indexController.newBlogs', args=[{}]}
+2021-08-09 09:23:47.003  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : Result : _fragments :: newblogList
+2021-08-09 09:23:47.004  INFO 20092 --- [http-nio-8080-exec-2] com.yf.aspect.LogAspect                  : -----doAfter------
